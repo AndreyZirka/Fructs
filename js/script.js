@@ -33,6 +33,7 @@ if (isMobile.any()) {
    $('.menu__first-link').click(function () {
       if (!$(this).hasClass('active')) {
          $(".menu__first-link").find('.menu__sublist').slideUp();
+          $('.menu__first-link').removeClass('active');
          $(".menu__first-link").children('.menu__arrow').removeClass('_active');
          $(this).find('.menu__sublist').slideToggle();
          $(this).addClass('active');
